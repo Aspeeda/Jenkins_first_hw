@@ -3,6 +3,7 @@ package tests;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.TestData;
 
@@ -13,6 +14,7 @@ import static io.qameta.allure.Allure.step;
 public class TestForms extends TestBase {
 
     @Test
+    @Tag("registration")
     @DisplayName("Test filling form")
     void successfulRegistrationTest() {
 
